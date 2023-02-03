@@ -5,59 +5,61 @@
     <title>Formulário de Cadastro</title>
 </head>
 <body>
-    <fieldset>
-        <form>
-            <div>
-                <label for="nome">Nome</label>
-                <input id="nome" name="nome" type="text" placeholder="Digite seu nome aqui..." required/>
-            </div>
-            <br>
-            <div>
-                <label for="email" place>E-mail</label>
-                <input type="text" name="email" id="email" placeholder="Digite seu e-mail aqui..." required>
-            </div>
-            <br>
-            <div>
-                <label for="descricao">Descrição</label>
+    <main>
+        <fieldset>
+            <form>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" placeholder="Digite seu nome aqui..." required/>
+                </div>
                 <br>
-                <textarea 
-                    name="descricao" 
-                    id="descricao" 
-                    cols="30" 
-                    rows="10"
-                    placeholder="Fale mais sobre você aqui..."
-                ></textarea>
-            </div>
-            <br>
-            <div>
-                <select name="modulo" id="modulo">
-                    <option hidden>Escolher módulo</option>
-                    <option value="avista">À vista</option>
-                    <option value="parcelado">Parcelado</option>
-                    <option value="isa">ISA</option>
-                </select>
-            </div>
-            <br>
-            <div>
-                <label for="senha">Senha</label>
-                <input id="senha" type="password" placeholder="Digite sua senha aqui..." required>
-            </div>
-            <br>
-            <div>
-                <label for="confsenha">Confirmar Senha</label>
-                <input id="confsenha" type="password" placeholder="Digite sua senha novamente aqui..." required>
-            </div>
-            <br>
-            <div>
-                <p>Deseja receber novidades em seu e-mail?</p>
-                <label for="s">Sim</label>
-                <input  id="s" name="notfcemail" type="radio" id="sim">
-                <label for="n">não</label>
-                <input id="n" name="notfcemail" type="radio" id="nao">
-            </div>
-            <br>
-            <button type="submit">Enviar</button>
-        </form>
-    </fieldset>
+                <div>
+                    <label for="email" place>E-mail</label>
+                    <input type="text" name="email" id="email" placeholder="Digite seu e-mail aqui..." required>
+                </div>
+                <br>
+                <div>
+                    <label for="descricao">Descrição</label>
+                    <br>
+                    <textarea 
+                        name="descricao" 
+                        id="descricao" 
+                        cols="30" 
+                        rows="10"
+                        placeholder="Fale mais sobre você aqui..."
+                    ></textarea>
+                </div>
+                <br>
+                <div>
+                    <select name="modulo" id="modulo">
+                        <option hidden>Escolher módulo</option>
+                        <option value="avista">À vista</option>
+                        <option value="parcelado">Parcelado</option>
+                        <option value="isa">ISA</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="senha">Senha</label>
+                    <input id="senha" type="password" placeholder="Digite sua senha aqui..." required>
+                </div>
+                <br>
+                <div>
+                    <label for="confsenha">Confirmar Senha</label>
+                    <input id="confsenha" type="password" placeholder="Digite sua senha novamente aqui..." required>
+                </div>
+                <br>
+                <div>
+                    <p>Deseja receber novidades em seu e-mail?</p>
+                    <label for="s">Sim</label>
+                    <input  id="s" name="notfcemail" type="radio" id="sim">
+                    <label for="n">não</label>
+                    <input id="n" name="notfcemail" type="radio" id="nao">
+                </div>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </fieldset>
+    </main>
 </body>
 </html>
