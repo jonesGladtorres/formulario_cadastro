@@ -3,63 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <fieldset>
-            <form>
-                <div>
-                    <label for="nome">Nome</label>
-                    <input id="nome" name="nome" type="text" placeholder="Digite seu nome aqui..." required/>
-                </div>
+        <form>
+            <div class="wave-group">
+                <input required="" type="text" class="input">
+                <span class="bar"></span>
+                <label class="label">
+                  <span class="label-char" style="--index: 0">N</span>
+                  <span class="label-char" style="--index: 1">o</span>
+                  <span class="label-char" style="--index: 2">m</span>
+                  <span class="label-char" style="--index: 3">e</span>
+                </label>
+            </div>
+            <br>
+            <div class="wave-group">
+                <input required="" type="text" class="input">
+                <span class="bar"></span>
+                <label class="label">
+                  <span class="label-char" style="--index: 0">E</span>
+                  <span class="label-char" style="--index: 1">m</span>
+                  <span class="label-char" style="--index: 2">a</span>
+                  <span class="label-char" style="--index: 3">i</span>
+                  <span class="label-char" style="--index: 4">l</span>
+                </label>
+            </div>
+            <br>
+            <div class="descricao">
+                <label id="ldescricao" for="descricao">Mensagem</label>
                 <br>
-                <div>
-                    <label for="email" place>E-mail</label>
-                    <input type="text" name="email" id="email" placeholder="Digite seu e-mail aqui..." required>
-                </div>
-                <br>
-                <div>
-                    <label for="descricao">Descrição</label>
-                    <br>
-                    <textarea 
-                        name="descricao" 
-                        id="descricao" 
-                        cols="30" 
-                        rows="10"
-                        placeholder="Fale mais sobre você aqui..."
-                    ></textarea>
-                </div>
-                <br>
-                <div>
-                    <select name="modulo" id="modulo">
-                        <option hidden>Escolher módulo</option>
-                        <option value="avista">À vista</option>
-                        <option value="parcelado">Parcelado</option>
-                        <option value="isa">ISA</option>
-                    </select>
-                </div>
-                <br>
-                <div>
-                    <label for="senha">Senha</label>
-                    <input id="senha" type="password" placeholder="Digite sua senha aqui..." required>
-                </div>
-                <br>
-                <div>
-                    <label for="confsenha">Confirmar Senha</label>
-                    <input id="confsenha" type="password" placeholder="Digite sua senha novamente aqui..." required>
-                </div>
-                <br>
-                <div>
-                    <p>Deseja receber novidades em seu e-mail?</p>
-                    <label for="s">Sim</label>
-                    <input  id="s" name="notfcemail" type="radio" id="sim">
-                    <label for="n">não</label>
-                    <input id="n" name="notfcemail" type="radio" id="nao">
-                </div>
-                <br>
-                <button type="submit">Enviar</button>
-            </form>
-        </fieldset>
+                <textarea name="descricao" id="descricao" cols="30" rows="10"
+                placeholder="Deixe sua mensagem.."></textarea>
+            </div>
+            <br>
+            <div>
+                <select id="select" name="modulo" id="modulo">
+                    <option id="escolhermodulo" hidden>Escolher Pagamento</option>
+                    <option value="avista">À vista</option>
+                    <option value="parcelado">Parcelado</option>
+                    <option value="isa">ISA</option>
+                </select>
+            </div>
+            <br>
+            <div class="wave-group">
+                <input required="" type="password" class="input">
+                <span class="bar"></span>
+                <label class="label">
+                  <span class="label-char" style="--index: 0">S</span>
+                  <span class="label-char" style="--index: 1">e</span>
+                  <span class="label-char" style="--index: 2">n</span>
+                  <span class="label-char" style="--index: 3">h</span>
+                  <span class="label-char" style="--index: 4">a</span>
+                </label>
+            </div>
+            <br>
+            <div class="wave-group">
+                <input required="" type="password" class="input">
+                <span class="bar"></span>
+                <label class="label">
+                  <span class="label-char" style="--index: 0">C</span>
+                  <span class="label-char" style="--index: 1">o</span>
+                  <span class="label-char" style="--index: 2">n</span>
+                  <span class="label-char" style="--index: 3">f</span>
+                  <span class="label-char" style="--index: 4">i</span>
+                  <span class="label-char" style="--index: 5">r</span>
+                  <span class="label-char" style="--index: 6">m</span>
+                  <span class="label-char" style="--index: 7">a</span>
+                  <span class="label-char" style="--index: 8">r</span>
+                  <span class="label-char" style="--index: 9">S</span>
+                  <span class="label-char" style="--index: 10">e</span>
+                  <span class="label-char" style="--index: 11">n</span>
+                  <span class="label-char" style="--index: 12">h</span>
+                  <span class="label-char" style="--index: 13">a</span>
+                </label>
+            </div>
+            <br>
+            <div>
+                <p id="novidades">Deseja receber novidades em seu e-mail?</p>
+                <label id="ls" for="s">Sim</label>
+                <input id="is" name="notfcemail" type="radio" id="sim">
+                <label id="ln" for="n">Não</label>
+                <input id="in" name="notfcemail" type="radio" id="nao">
+            </div>
+            <br>
+            <button class="button">
+                <span class="button-content">Enviar</span>
+            </button>
+        </form>
     </main>
+    <footer>
+        <h3>Feito por Jones Torres</h3>
+    </footer>
 </body>
 </html>

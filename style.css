@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 98vh;
+    background: rgb(32,7,54);
+    background: linear-gradient(45deg, rgba(32,7,54,1) 0%, rgba(59,8,96,1) 25%, rgba(44,9,121,1) 39%, rgba(74,28,168,1) 51%, rgba(0,212,255,1) 73%);
+}
+body main{
+    margin-top: 50px;
+    width: 20%;
+    background-color: aliceblue;
+    border: transparent;
+    border-radius: 8px;
+}
+body main form{
+    margin: 20px;
+}
+.wave-group {
+    position: relative;
+}
+  
+.wave-group .input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+}
+  
+.wave-group .input:focus {
+    outline: none;
+}
+.wave-group .label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    display: flex;
+}
+.wave-group .label-char {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--index) * .05s);
+}
+  
+.wave-group .input:focus ~ label .label-char,
+.wave-group .input:valid ~ label .label-char {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #6200ff;
+}
+.wave-group .bar {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+  
+.wave-group .bar:before,.wave-group .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #6200ff;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.wave-group .bar:before {
+    left: 50%;
+}
+.wave-group .bar:after {
+    right: 50%;
+}
+.wave-group .input:focus ~ .bar:before,
+.wave-group .input:focus ~ .bar:after {
+    width: 50%;
+}
+body main form textarea{
+    outline: none;
+    background-color: transparent;
+}
+body main form label{
+    color: #999;
+}
+body main form p{
+    color: #999;
+}
+body main form select{
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    color: #999;
+    outline: none; 
+    appearance: none;
+    border-bottom: 1px solid #999;
+    cursor: pointer;
+}
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+}
+  
+.button:hover::before {
+    transform: scaleX(1);
+}
+  
+.button-content {
+    position: relative;
+    z-index: 1;
+}
+  
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+}
+body footer{
+    font-family: 'Share Tech Mono', monospace;
+    margin-bottom: 40px;
+}
